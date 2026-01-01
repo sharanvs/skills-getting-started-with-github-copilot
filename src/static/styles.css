@@ -70,8 +70,61 @@ section h3 {
   color: #0066cc;
 }
 
+.activity-card h5 {
+  margin-top: 12px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #2e3a87;
+}
+
 .activity-card p {
   margin-bottom: 8px;
+}
+
+/* participants list inside each activity card (no bullets, styled rows) */
+.participants {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  margin-top: 6px;
+  max-height: 160px;
+  overflow-y: auto;
+}
+
+/* individual participant row with remove button */
+.participant-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+  border-bottom: 1px dashed #eee;
+  font-size: 14px;
+  color: #333;
+}
+
+.delete-btn {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.delete-btn:hover {
+  background: rgba(198, 40, 40, 0.08);
+}
+
+/* improve the "No participants yet" paragraph styling */
+.activity-card .info {
+  margin-top: 8px;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: #eef7ff;
+  color: #0c5460;
+  border: 1px solid #d0e9ff;
+  font-size: 14px;
 }
 
 .form-group {
